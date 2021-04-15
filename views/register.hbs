@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css\bootstrap.min.css">
+        <link rel="stylesheet" href="css\style.css">
+        <title>Medicine supply chain</title>
+
+    </head>
+    <body>
+        <div class="logform">
+        <div class="form-box ">
+            <div class="button-box text-center">
+                <div id="btn1"></div>
+        <button  class="reglogin btn text-center" type="button" onclick="login()">Login</button>
+        <button  class="reglogin btn text-center text-white" type="button" >Register</button>
+        
+        </div>
+        <form id="register" action="/register" method="POST">
+            <div class="form-group">
+                <input type="name" class="form-control form-1" id="exampleInputName" name="name" aria-describedby="nameHelp" placeholder="Enter your organization ame">
+                </div>
+            <div class="form-group form-1">
+              <input type="text" name="email" class="form-control form-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                  <label class="mx-2 font-weight-bold">Your role:</label>
+                  
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="role" id="inlineRadio1" value="Producer">
+                    <label class="form-check-label" for="inlineRadio1">Producer</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="role" id="inlineRadio2" value="Distributor">
+                    <label class="form-check-label" for="inlineRadio2">Distributor</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="role" id="inlineRadio3" value="Customer" >
+                    <label class="form-check-label" for="inlineRadio3">Customer</label>
+                  </div>
+                
+                  
+            </div>
+              
+            <div class="form-group form-1">
+              <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-1">
+                <input type="password" name="c_password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+              </div>
+            
+            <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary submit">Register</button>
+            </div>
+          </form>
+
+          
+    </div>
+    </div>
+    
+        <script src="js\bootstrap.min.js" ></script>
+        <script>
+            x=document.getElementById("register");
+            y=document.getElementById("login")
+            z=document.getElementById("btn1")
+            function login(){
+                 
+                 z.style.left="0%";
+                 window.location.href="/"
+
+            }
+            
+        </script>
+    </body>
+</html>
